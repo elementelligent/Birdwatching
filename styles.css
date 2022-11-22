@@ -6,4 +6,19 @@ header, main, footer {
 header div {
     display: flex;
     align-items: center;
+
+    /* for spacing, use rems. */
     gap: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    /* for font-sizes use ems*/
+    font-size: 3em;
+    font-weight: 700;
+}
