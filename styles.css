@@ -1,3 +1,9 @@
 header, main, footer {
     background-color: greenyellow;
 }   
+
+/* GENERAL CHILD SELECTOR: Select any/all descendents that are 'div' */
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
