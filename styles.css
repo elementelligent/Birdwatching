@@ -1,0 +1,4 @@
+/* Tag selector - Select all the h1s and apply the following styles */
+h1 {
+    color: red;
+}
