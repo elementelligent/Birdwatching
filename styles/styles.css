@@ -94,6 +94,8 @@ main section:first-child img:hover + p {
 }
 main section:first-child p:last-child {
     opacity: 0; 
+    transition: opacity 0.5s dease-in-out;
+    transition-delay: 0.2s;
     z-index: 1;
 
 }
