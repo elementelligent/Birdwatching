@@ -85,8 +85,9 @@ main section:first-child img:hover   {
     opacity: 0;
 
 }
-main section:first-child p:last-child{
-    background-color: red;
+main section:first-child p:last-child {
+    /* opacity: 0; */
+    
 
 }
 main section:last-child {
