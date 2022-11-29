@@ -40,8 +40,7 @@ h2 {
 }
 
 nav ul {
-    display: flex;  
-    align-items: center;
+    display: flex;   
 }
 
 nav a {
@@ -59,7 +58,7 @@ nav a:hover {
 }
 
 main {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem;
     display: flex;
     column-gap: 1.5rem;
@@ -72,13 +71,18 @@ main section {
 }
 
 main section:first-child {
-    min-width: 5%;
+    min-width: 60%;
 }
 
 /*transistioning for a pic to fade out/in*/
-
+/*position lock pic in place*/
 
 main section:first-child img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
     transition:  opacity 0.5s ease-in-out;
 }
 main section:first-child img:hover   {
@@ -87,10 +91,14 @@ main section:first-child img:hover   {
 }
 main section:first-child p:last-child {
     /* opacity: 0; */
-    
+    z-index: 1;
 
 }
-main section:last-child {
+main section:first-child .flex {
+    width: 250px;
+    height: 250px;
+}
+main section:last-child {  
     display: grid;
 
     
@@ -124,11 +132,15 @@ footer {
     padding: 1rem 0.5rem;
 }
 
+/* Simplify the CSS by using these classes. */
 .flex {
-    display:flex;
+    display: flex;
 }
 
 .flex--center {
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+}
+.relative {
+    position: relative;
 }
