@@ -74,6 +74,21 @@ main section {
 main section:first-child {
     min-width: 5%;
 }
+
+/*transistioning for a pic to fade out/in*/
+
+
+main section:first-child img {
+    transition:  opacity 0.5s ease-in-out;
+}
+main section:first-child img:hover   {
+    opacity: 0;
+
+}
+main section:first-child p:last-child{
+    background-color: red;
+
+}
 main section:last-child {
     display: grid;
 
@@ -104,6 +119,15 @@ main section:last-child img:last-child {
     grid-area: img-4;
 }
 
-footer{
+footer {
     padding: 1rem 0.5rem;
+}
+
+.flex {
+    display:flex;
+}
+
+.flex--center {
+    align-items: center;
+    justify-items: center;
 }
