@@ -89,8 +89,11 @@ main section:first-child img:hover   {
     opacity: 0;
 
 }
+main section:first-child img:hover + p {
+    opacity: 1;
+}
 main section:first-child p:last-child {
-    /* opacity: 0; */
+    opacity: 0; 
     z-index: 1;
 
 }
