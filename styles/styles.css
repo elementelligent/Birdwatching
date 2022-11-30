@@ -135,8 +135,14 @@ footer {
 }
 
 /* Simplify the CSS by using these utility classes. */
+
+
 .flex {
     display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .fle--items-center{
