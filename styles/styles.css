@@ -136,7 +136,9 @@ footer {
 
 /* Simplify the CSS by using these utility classes. */
 
-
+.absolute {
+    position: absolute;
+}
 .flex {
     display: flex;
 }
