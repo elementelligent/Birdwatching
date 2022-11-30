@@ -154,11 +154,11 @@ border-width: 0;
     display: flex;
 }
 
-.flex-col {
+.flex--col {
     flex-direction: column;
 }
 
-.fle--items-center{
+.flex--items-center{
     align-items: center;
 }
 .flex--content-center {    
