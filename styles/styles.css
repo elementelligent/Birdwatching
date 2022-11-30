@@ -141,8 +141,10 @@ footer {
     display: flex;
 }
 
-.flex--center {
+.fle--items-center{
     align-items: center;
+}
+.flex--content-center {    
     justify-content: center;
 }
 .relative {
