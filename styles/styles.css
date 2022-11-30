@@ -11,7 +11,6 @@ img {
 
 /* GENERAL CHILD SELECTOR: Select any/all descendents that are 'div' */
 header div {
-    display: flex;
     align-items: center;
 
     /* for spacing, use rems. */
@@ -137,7 +136,7 @@ footer {
     padding: 1rem 0.5rem;
 }
 
-/* Simplify the CSS by using these classes. */
+/* Simplify the CSS by using these utility classes. */
 .flex {
     display: flex;
 }
