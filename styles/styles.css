@@ -11,8 +11,6 @@ img {
 
 /* GENERAL CHILD SELECTOR: Select any/all descendents that are 'div' */
 header div {
-    align-items: center;
-
     /* for spacing, use rems. */
     gap: 1rem;
 }
@@ -86,7 +84,7 @@ main section:first-child img:hover   {
     opacity: 0;
 
 }
-main section:first-child img:hover + p {
+main section:first-child img:hover~p {
     opacity: 1;
 }
 main section:first-child p:last-child {
@@ -173,9 +171,10 @@ button {
 .flex {
     display: flex;
 }
-.flex--center{
+.flex--center {
     align-items: center;
     justify-items: center;
+    justify-content: center;
 }
 
 .flex--col {
