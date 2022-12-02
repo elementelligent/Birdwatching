@@ -1,25 +1,18 @@
 header, main, footer {
     background-color: greenyellow;
 }   
-
 img {
     /* Prevent images from spilling outside of the parent. */
     max-width: 100%;
     height: auto;
 }
-
-
 /* GENERAL CHILD SELECTOR: Select any/all descendents that are 'div' */
 header div {
     /* for spacing, use rems. */
     gap: 1rem;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 li {
     list-style: none;
@@ -55,9 +48,7 @@ nav a:hover {
 main {
     margin: 1rem 0;
     padding: 1rem;
-    
     column-gap: 1.5rem;
-
 }
 
 main section {
@@ -73,7 +64,6 @@ main section:first-child {
 /*position lock pic in place*/
 
 main section:first-child img {
-    position: absolute;
     top: 0;
     left: 0;
     width: 250px;
@@ -89,7 +79,7 @@ main section:first-child img:hover~p {
 }
 main section:first-child p:last-child {
     opacity: 0; 
-    transition: opacity 0.5s dease-in-out;
+    transition: opacity 0.5s ease-in-out;
     transition-delay: 0.2s;
     z-index: 1;
 
@@ -102,7 +92,7 @@ main section:last-child {
     display: grid;
 
     
-    grid-template-areas: 
+    grid-template-areas:
     "header header"
     "img-1 img-2"
     "img-3 img-4";
@@ -112,7 +102,7 @@ main section:last-child h2 {
     grid-area: header;
 }
 
-main section:last-child img:first-child{
+main section:last-child img:first-child {
     grid-area: img-1;
 }
 
@@ -171,22 +161,17 @@ button {
 .flex {
     display: flex;
 }
-.flex--center {
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
 
 .flex--col {
     flex-direction: column;
 }
-
-.flex--items-center{
-    align-items: center;
-}
 .flex--content-center {    
     justify-content: center;
 }
+.flex--items-center{
+    align-items: center;
+}
+
 .relative {
     position: relative;
 }
