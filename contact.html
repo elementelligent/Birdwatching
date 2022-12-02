@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/styles.css"/>
     <link rel="stylesheet" href="./styles/contact.css"/>
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header class="flex flex--items-center flex--col">
         <h1>Contact</h1>
     </header>
 
@@ -24,23 +24,23 @@
   
         <form class="flex flex--col">
           <div>
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="name" />
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name" />
           </div>
   
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" placeholder="email"/>
           </div>
   
           <div>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Msg"></textarea>
           </div>
   
           <div>
             <label for="newsletter">Subscribe to our newsletter</label>
-            <input type="checkbox" id="newsletter" name="newsletter" />
+            <input type="checkbox" id="newsletter"  />
           </div>
   
           <div>
