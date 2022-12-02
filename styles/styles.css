@@ -129,7 +129,8 @@ form {
     gap: 0.5rem;
 }
 
-label: :not([for="newsletter"]):not([for="heard"]) {
+label: :not([for="newsletter"]):not([for="heard"]) 
+{
 position: absolute;
 width: 1px;
 height: 1px;
